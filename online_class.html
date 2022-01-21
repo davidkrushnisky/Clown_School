@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <link href="CSS/classes.css" rel="stylesheet" />
+
+    <title>online-classes!</title>
+  </head>
+  
+  <body>
+    <main class="container">
+      <!-- homepage banner -->
+      <header class="row py-2">
+        <div id="logoDiv" class="col-3 px-0"><img src="images/clown_logo.png" alt="ClownAcademy Logo" class="imgLogo"></div>
+  
+        <!--Drop Down Menu-->
+        <div class="dropdown col-9 pr-4 d-md-none d-flex justify-content-end align-self-center">
+            <div class="dropbtn" onclick="myFunction(); menuTransform(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">Home</a>
+                <a href="classes.html">Classes</a>
+                <a href="videos.html">Videos</a>
+                <a href="staff.html">Staff</a>
+                <a href="about.html">About</a>
+                <a href="form.html">1-800-909-CLOWN</a>
+              </div>
+          </div>
+        </div>
+        <!--Visible menu for desktop-->
+        <div class="col-9 d-none d-md-block text-right align-self-center largerText">
+            Home &nbsp &nbsp
+            <a href="classes.html">Classes</a>&nbsp &nbsp
+            <a href="videos.html">Videos</a>&nbsp &nbsp
+            <a href="staff.html">Staff</a>&nbsp &nbsp
+            <a href="about.html">About</a>&nbsp &nbsp
+            1-800-909-clown
+        </div>
+      </header>
+
+      <section class="row mt-3">
+        <h1 class="text-center pt-3 pb-3">ONLINE GROUP CLASSES</h1>
+        <h4 class="col-12 text-center pb-5">Lana - Laura - Leanne - Kimbo - Jenn - Nick - James - Jay - Sherman</h4>
+      </section>
+      <section class="row box">
+        <h3 class="col-12 text-center pt-3">STARTING SOON</h3>
+      </section>
+
+      <section class="row pt-3 text-center">
+        <!-- fig 1 -->
+        <div class="col-12 col-md-4 pb-3">
+          <figure class="figure">
+            <img src="images/clown1.jpg" class="figure-img img-fluid rounded" alt="...">
+            <figcaption class="figure-caption">Make Like Trickster with James.<br/>$100</figcaption>
+          </figure>
+          <div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel1" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel1">Wednesday Night Series</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Explore the playful and disruptive side of human imagination as it is embodied in Trickster mythos. Borrowing from many art forms through the lens of Trickster traditions and mythologies from around the world, you’ll play in a realm where the artist is there to disrupt, mock, and entertain: the realm of the Trickster. These archetypal figures have served as leaders in communication and healing since our cultural beginnings. They feature as prominent parts of story-telling, tribal rituals, performing arts, and ceremonies in cultures all over the world to entertain and amuse, but also provoke and unsettle. They control through chaos. They give, and they take. They flatter you, and they mock you. They are ridiculous and sublime. Enter and surrender to the world of the Trickster.<br/>Class type: ZOOM<br/>Date: to be arranged at mutual convenience<br/>Time: to be arranged at mutual convenience</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">NOT INTERESTED</button>
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">REGISTER</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel2">Create an account</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" aria-describedby="passwordHelpBlock" id="exampleInputPassword1">
+                      <div id="passwordHelpBlock" class="form-text">
+                        Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                      </div>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Receive newsletters and update classes from Laugh Academy</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <div>Already have an account? <a href="#">Log in</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle1" role="button">CLICK FOR DETAIL</a>
+        </div>
+
+        <!-- fig 2 -->
+        <div class="col-12 col-md-4 pb-3">
+          <figure class="figure">
+            <img src="images/clown2.jpg" class="figure-img img-fluid rounded" alt="...">
+            <figcaption class="figure-caption">Satire with Jay.<br/>$100</figcaption>
+          </figure>
+          <div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel1" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel1">Thursday Night Series</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Satire--as a technique to lampoon foolishness and corruption--has pervaded culture for centuries, utilizing humor as a weapon, to speak truth to power, to protest the unjust, and to hold a mirror to society. This new Certificate Program offered by The Clown School will help performers write and develop their own satirical characters for performance through improvisation, writing prompts, and performance of scripted material. We will also explore the work of great theatrical satirists of the past such as Moliére, Oscar Wilde, and Commedia dell’Arte all the way up through Stephen Colbert and Sasha Baron Cohen.<br/>There are 10 units total, all of which are done at your own pace. You will meet virtually with the instructor several times during the course for private dedicated sessions. There will be some project and preparation work between meetings. It's super flexible, fun and personalized. At the end of the journey, you will receive a Certificate of Completion from us.<br/>Class type: ZOOM<br/>Date: to be arranged at mutual convenience<br/>Time: to be arranged at mutual convenience</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">NOT INTERESTED</button>
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">REGISTER</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel2">Create an account</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" aria-describedby="passwordHelpBlock" id="exampleInputPassword1">
+                      <div id="passwordHelpBlock" class="form-text">
+                        Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                      </div>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Receive newsletters and update classes from Laugh Academy</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <div>Already have an account? <a href="#">Log in</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle1" role="button">CLICK FOR DETAIL</a>
+        </div>
+
+        <!-- fig 3 -->
+        <div class="col-12 col-md-4 pb-3">
+          <figure class="figure">
+            <img src="images/clown3.jpg" class="figure-img img-fluid rounded" alt="...">
+            <figcaption class="figure-caption">Games and laughs with Kimbo.<br/>$100</figcaption>
+          </figure>
+          <div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel1" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel1">Friday Night Series</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Discover the magic that happens when we truly play in the moment. When we fully abandon what’s coming next. When the ending is as big a mystery to us as it is the audience. When everything falls apart, rather than crumble, we shine. When we admit the mistake, instead of hiding or denying it. When we stop overthinking and simply follow our impulses. When we get out of our heads and play from our hearts. When we cast aside technique, research, and methodology and simply pretend. Pretend to be the Jester, the Dragon, the Queen, or even the Glorious Throne her majesty is sitting on. Is it possible your curiosity, imagination and courage are all you need? This workshop invites you to experience how Clowns approach text.<br/>Class type: ZOOM<br/>Date: to be arranged at mutual convenience<br/>Time: to be arranged at mutual convenience</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">NOT INTERESTED</button>
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">REGISTER</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel2">Create an account</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" aria-describedby="passwordHelpBlock" id="exampleInputPassword1">
+                      <div id="passwordHelpBlock" class="form-text">
+                        Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                      </div>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Receive newsletters and update classes from Laugh Academy</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <div>Already have an account? <a href="#">Log in</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle1" role="button">CLICK FOR DETAIL</a>
+        </div>
+        
+        
+        <!-- fig 4 -->
+        <div class="col-12 col-md-4 pb-3">
+          <figure class="figure">
+            <img src="images/clown4.jpg" class="figure-img img-fluid rounded" alt="...">
+            <figcaption class="figure-caption">Playing yourself with Sherman.<br/>$100</figcaption>
+          </figure>
+          <div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel1" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel1">Saturday Morning Series</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>In this four part progressive workshop we will invite our many "selves" or "masks" to reveal themselves by tapping into our psychic circus! We will explore the relationship between Ringmaster, Clown Player, and Mask to deepen our understanding of the psychic circus. Using structured improvisations, dynamic relaxation, Rivers, and extensions of the psycho-physical body we will allow characters to emerge from our subconscious and into the arena of Play. We will follow our curiosities to find what lies just beneath the surface and let our clowns test drive the masks we discover in the workshop. The intention of this work is for you to find lightness, joy, and irreverence of you being YOU.<br/>Class type: ZOOM<br/>Date: to be arranged at mutual convenience<br/>Time: to be arranged at mutual convenience</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">NOT INTERESTED</button>
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">REGISTER</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel2">Create an account</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" aria-describedby="passwordHelpBlock" id="exampleInputPassword1">
+                      <div id="passwordHelpBlock" class="form-text">
+                        Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                      </div>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Receive newsletters and update classes from Laugh Academy</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <div>Already have an account? <a href="#">Log in</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle1" role="button">CLICK FOR DETAIL</a>
+        </div>
+
+        <!-- fig 5 -->
+        <div class="col-12 col-md-4 pb-3">
+          <figure class="figure">
+            <img src="images/clown5.jpg" class="figure-img img-fluid rounded" alt="...">
+            <figcaption class="figure-caption">The movement of body with Lana.<br/>$100</figcaption>
+          </figure>
+          <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel">Sunday Morning Series</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Join this extraordinary intensive to experience your body as a gateway to creativity, exploring presence, memory, imagination, thoughts and emotions, belief systems and archetypes, all in service of a deeper understanding of the self, and the portrayal of rich, complex, and dimensional characters. While the work is rigorous, it is open to performers of all stripes, including actors and clowns, as well as teachers, poets, seekers, and anyone interested in the mysteries of the creative process.<br/>Ages: 18 and older.<br/>Prerequisite: None. All experience levels welcome!<br/>Class type: ZOOM<br/>Date: to be arranged at mutual convenience<br/>Time: to be arranged at mutual convenience</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">NOT INTERESTED</button>
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">REGISTER</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel2">Create an account</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" aria-describedby="passwordHelpBlock" id="exampleInputPassword1">
+                      <div id="passwordHelpBlock" class="form-text">
+                        Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                      </div>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Receive newsletters and update classes from Laugh Academy</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <div>Already have an account? <a href="#">Log in</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">CLICK FOR DETAIL</a>
+        </div>
+      </section>
+      
+      <section>
+        
+      </section>
+      
+      <!-- homepage footer -->
+      <footer class="row pt-4 pb-4">
+        <div class="col-12 col-lg-4 text-center">
+          <h6>Quick Links</h6>
+          <ul>
+            <a href="#"><li>Look, funny clown haha</li></a>
+            <a href="#"><li>How to make people laugh</li></a>
+            <a href="#"><li>Acting classes</li></a>
+            <a href="#"><li>Crusty the Clown blog</li></a>
+            <a href="#"></a>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-4 text-center">
+          <h6>Contact Us</h6>
+          <i class="bi bi-geo-alt-fill"><a href="https://www.google.com/maps/place/2880+N+Wickham+Rd,+Melbourne,+FL+32935,+USA/@28.1539024,-80.676456,17z/data=!3m1!4b1!4m5!3m4!1s0x88de0f9d0206efc7:0x1eee3353a3879ca4!8m2!3d28.1539024!4d-80.6742619">2880 N Wickham Rd, Melbourne, Florida(FL), 32935</a></i>
+          <br/>
+          <i class="bi bi-envelope-fill"><a href="#">Contact us</a></i>
+          <br/>
+          <i class="bi bi-telephone-fill mb-5">1-800-909-CLOWN</i>
+          </div>
+        </div> 
+        <div class="col-12 col-lg-4 text-center">
+          <h6>Subscribe Now</h6>
+          <button type="button" class="btn btn-primary">SIGN UP TO OUR NEWSLETTERS</button>
+          <h6>FOLLOW US</h6>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+          <a href="#"><i class="bi bi-vimeo"></i></a>
+
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              select a language
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">French</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 text-center pt-3">
+          <p>Be ware of copyright claims. Those are serious and people in the States are crazy. They'll sue you for anything and everything. Capitalist am I right?</p>
+        </div>
+      </footer>
+
+    </main>
+    
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
