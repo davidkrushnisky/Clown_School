@@ -17,7 +17,7 @@ body{
 main{
     background-color: #00B6FB;
 }
-header, footer {
+header, footer, banner {
     background-color: #F7FF10;
 }
 h1, h2, h4{
@@ -25,6 +25,11 @@ h1, h2, h4{
 }
 .imgLogo{
     width: 70%;
+}
+.btn-primary {
+    background-color: red;
+    color: black;
+    border-color: black;
 }
 /*
 #logoDiv{
