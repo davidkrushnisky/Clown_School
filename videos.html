@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
-    <link href="CSS/ClownAcademy.css" rel="stylesheet"/>
+    <link href="CSS/ClownAcademy.css" rel="stylesheet" />
     <title>Clown Academy</title>
 </head>
 
@@ -22,15 +22,15 @@
                     class="imgLogo"></div>
 
             <!--Drop Down Menu-->
-            <div class="dropdown col-9 pr-4 d-md-none d-flex justify-content-end align-self-center">
+            <div class="dropdown col-8 pr-4 d-md-none d-flex justify-content-end align-self-center">
                 <div class="dropbtn" onclick="myFunction(); menuTransform(this)">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                     <div id="myDropdown" class="dropdown-content">
-                        <a href="#">Home</a>
+                        <a href="index.html">Home</a>
                         <a href="classes.html">Classes</a>
-                        <a href="videos.html">Videos</a>
+                        <a href="#">Videos</a>
                         <a href="staff.html">Staff</a>
                         <a href="about.html">About</a>
                         <a href="form.html">1-800-909-CLOWN</a>
@@ -39,9 +39,9 @@
             </div>
             <!--Visible menu for desktop-->
             <div class="col-9 d-none d-md-block text-right align-self-center largerText">
-                Home &nbsp &nbsp
+                <a href="index.html">Home</a>&nbsp &nbsp
                 <a href="classes.html">Classes</a>&nbsp &nbsp
-                <a href="videos.html">Videos</a>&nbsp &nbsp
+                Videos &nbsp &nbsp
                 <a href="staff.html">Staff</a>&nbsp &nbsp
                 <a href="about.html">About</a>&nbsp &nbsp
                 1-800-909-clown
@@ -49,59 +49,12 @@
         </header>
 
         <section>
-            <banner class="row my-5">
-                <div class="col-12 col-md-6 text-center text-md-right align-self-center">
-                    <h1>Coming Soon<br>Class in session!</h1>
-                    <a href="form.html" class="btn btn-primary">Sign Up</a>
-                </div>
-                </div>
-                <div class="col-12 col-md-6 py-4 text-center text-md-left">
-                    <img src="images/perks.png" alt="Benefits of Our Program" class="img-fluid" />
-                </div>
-            </banner>
+
         </section>
 
         <section>
-            <div class="row">
-                <div class="col-12 col-md-6 text-center text-md-right align-self-center">
-                    <h2>Welcome to Laugh Academy</h2>
-                    A school dedicated to entertainment, laughter and clowning. Our program offers students everything they need to become the best clowns around town, ready to take on kids' birthday parties or grandma's famous karaoke night. Our teachers will guide you through the process by taking you to their own gigs. Open to all ages, children and adults alike. 
-                    <br><br>
-                    <a href="about.html" class="btn btn-secondary">More</a>
-                </div>
-                <div class="col-12 col-md-6 py-4 text-center">
-                    <video width="300" height="250" controls>
-                        <source src="videos/laughacademy.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
+
         </section>
-
-        <section>
-            <div class="row">
-                <div class="col-12 col-md-6 order-md-2 text-center text-md-left align-self-center">
-                    <h2>Meet Your Teachers</h2>
-                    Our nine teachers are some of the best known clowns around town. Catch them acting like clowns in our classes 
-                    or clowning around on weekends!
-                </div>
-                <div class="col-12 col-md-6 order-md-1 py-4 text-center text-md-right">
-                    <img src="images/jayjay_the_colorful.jpg" alt="Benefits of Our Program" class="img-fluid" />
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h2>Shows</h2>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-
-        </footer>
-
 
     </main>
 
@@ -135,6 +88,20 @@
             }
         }</script>
 
+    <section class="row mx-2 py-3">
+        <h1 class="col-12 text-center">Check out our Feature Video!</h1>
+        <div class="ratio ratio-16x9">
+            <iframe src="videos/Laughacademy.mp4" title="LauchAcademy Video" allowfullscreen></iframe>
+        </div>
+    </section>
+    <div class="divideBar"></div>
+    <section class="row mp-2 py-3">
+        <h2 class="text text-center">Plenty of room for future videos, who knows, maybe you'll be in one?</h2>
+        <div class="col-12 text-center py-2 col-sm-6"><img src="images/vid_left.jpg" alt="Future Video"
+                class="portrait"></div>
+        <div class="col-12 text-center mb-3 col-sm-6"><img src="images/vid_right.jpg" alt="Another Future Video"
+                class="portrait"></div>
+    </section>
 </body>
 
 </html>
