@@ -26,6 +26,9 @@ h1, h2, h4{
 .imgLogo{
     width: 70%;
 }
+.rotate30{
+    transform: rotate(-30deg);
+}
 .btn-primary {
     background-color: red;
     color: black;
@@ -86,12 +89,6 @@ h1, h2, h4{
     font-size: 1.5em;
 }
 
-@media (max-width: 370px) {
-	.smallerText{
-		font-size: 0.75em;
-	}
-}
-
 /* Dropdown Button */
 .dropbtn {
     color: white;
@@ -136,3 +133,9 @@ h1, h2, h4{
         font-size: 1.2em
     }
   }
+
+  @media (max-width: 370px) {
+	.smallerText{
+		font-size: 0.75em;
+	}
+}
