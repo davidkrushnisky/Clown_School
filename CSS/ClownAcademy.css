@@ -20,6 +20,9 @@ main{
 header, footer, banner {
     background-color: #F7FF10;
 }
+.bkgyellow{
+    background-color: #F7FF10;
+}
 h1, h2, h4{
     font-family: 'Sancreek', cursive;
 }
@@ -89,6 +92,12 @@ video{
     background-color: #F7FF10;
     height: 2em;
     margin-top: 5px;
+    margin-bottom: 5px;
+}
+.divideBar2{
+    background-color: #00B6FB;
+    height: 2em;
+    margin-top: px;
     margin-bottom: 5px;
 }
 .smallerText{
