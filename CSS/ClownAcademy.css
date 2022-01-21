@@ -97,6 +97,10 @@ video{
 .largerText{
     font-size: 1.5em;
 }
+.newsletter{
+    flex-shrink: initial;
+    padding-left: 15%;
+}
 
 /* Dropdown Button */
 .dropbtn {
