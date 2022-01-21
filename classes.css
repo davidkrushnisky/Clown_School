@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Sancreek&display=swap');
+
+/*
+    font-family: 'IM Fell English SC', serif;
+    font-family: 'Sancreek', cursive;
+    yellow: #F7FF10
+    blue: #00B6FB
+    orange: #FF8F10
+    magenta: #FF00C3
+    grey: #707070
+*/
+
+main{
+    background-color: #00B6FB;
+}
+body{
+    color: #0d0d0d;
+    background-color: #FF8F10;
+    font-family: 'IM Fell English SC', serif;
+}
+header {
+    background-color: #F7FF10;
+    position: sticky;
+    top: 0;
+}
+h1, h2, h4{
+    font-family: 'Sancreek', cursive;
+}
+.imgLogo{
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+.btn-primary {
+    background-color: #ff00C3;
+    color: #0d0d0d;
+    border-color: none;
+    border-radius: 20px;
+    position:relative;
+    margin:.2em;
+    -webkit-transition:transform .3s ease-out;
+    transition:transform .3s ease-out;
+}
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus{
+	background-color: #e202ae;
+	color: #0d0d0d;
+	border-color: none;
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+    z-index:10;
+}
+.figure-caption {
+    background:rgba(255, 255, 255, 0.5);
+    padding:.5em;
+    padding-top:1em;
+}
+
+#star {
+    text-align: center;
+}
+.hide {
+    display: none;
+}
+
+.clear {
+    float: none;
+    clear: both;
+}
+
+.rating {
+    width: 90px;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+    position: relative;
+}
+
+.rating > label {
+    float: right;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 1.1em;
+    cursor: pointer;
+    color: #000;
+}
+
+.rating > label:hover,
+.rating > label:hover ~ label,
+.rating > input.radio-btn:checked ~ label {
+    color: transparent;
+}
+
+.rating > label:hover:before,
+.rating > label:hover ~ label:before,
+.rating > input.radio-btn:checked ~ label:before,
+.rating > input.radio-btn:checked ~ label:before {
+    content: "\2605";
+    position: absolute;
+    left: 0;
+    color: #FFD700;
+}
+
+#logoDiv{
+    transform: rotate(-30deg);
+}
+  
+a:link {
+    text-decoration: none;
+}
+
+.smallerText{
+    font-size: 1em;
+}
+
+@media (max-width: 370px) {
+	.smallerText{
+		font-size: 0.75em;
+	}
+}
