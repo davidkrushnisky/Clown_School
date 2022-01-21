@@ -5,37 +5,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
-    crossorigin="anonymous">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
-    <link href="CSS/ClownAcademy.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <link href="CSS/ClownAcademy.css" rel="stylesheet"/>
     <title>Clown Academy</title>
 </head>
 
 <body>
     <main class="container">
         <header class="row py-2">
-            <div id="logoDiv" class="col-3 px-0"><img src="images/clown_logo.png" alt="ClownAcademy Logo" class="imgLogo"></div>
+            <div id="logoDiv" class="col-3 px-0"><img src="images/clown_logo.png" alt="ClownAcademy Logo"
+                    class="imgLogo"></div>
 
             <!--Drop Down Menu-->
             <div class="dropdown col-9 pr-4 d-md-none d-flex justify-content-end align-self-center">
                 <div class="dropbtn" onclick="myFunction(); menuTransform(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Home</a>
-                    <a href="classes.html">Classes</a>
-                    <a href="videos.html">Videos</a>
-                    <a href="staff.html">Staff</a>
-                    <a href="about.html">About</a>
-                    <a href="form.html">1-800-909-CLOWN</a>
-                  </div>
-              </div>
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Home</a>
+                        <a href="classes.html">Classes</a>
+                        <a href="videos.html">Videos</a>
+                        <a href="staff.html">Staff</a>
+                        <a href="about.html">About</a>
+                        <a href="form.html">1-800-909-CLOWN</a>
+                    </div>
+                </div>
             </div>
             <!--Visible menu for desktop-->
             <div class="col-9 d-none d-md-block text-right align-self-center largerText">
@@ -52,7 +52,8 @@
             <banner class="row my-5">
                 <div class="col-12 col-md-6 text-center text-md-right align-self-center">
                     <h1>Coming Soon<br>Class in session!</h1>
-                    <a href="form.html" class="btn btn-primary">Sign Up</a></div>
+                    <a href="form.html" class="btn btn-primary">Sign Up</a>
+                </div>
                 </div>
                 <div class="col-12 col-md-6 py-4 text-center text-md-left">
                     <img src="images/perks.png" alt="Benefits of Our Program" class="img-fluid" />
@@ -64,13 +65,15 @@
             <div class="row">
                 <div class="col-12 col-md-6 text-center text-md-right align-self-center">
                     <h2>Welcome to Laugh Academy</h2>
-                    <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi aperiam quidem, laboriosam sapiente, explicabo facilis at magnam alias deserunt animi quos iste voluptatem fugiat, rem consequuntur reprehenderit? Laboriosam, mollitia quasi.<br><br>
+                    <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi aperiam quidem, laboriosam
+                    sapiente, explicabo facilis at magnam alias deserunt animi quos iste voluptatem fugiat, rem
+                    consequuntur reprehenderit? Laboriosam, mollitia quasi.<br><br>
                     <a href="about.html" class="btn btn-secondary">More</a>
                 </div>
                 <div class="col-12 col-md-6 py-4 text-center">
                     <video width="300" height="250" controls>
                         <source src="videos/laughacademy.mp4" type="video/mp4">
-                      </video>
+                    </video>
                 </div>
             </div>
         </section>
@@ -102,32 +105,35 @@
     </main>
 
     <!--Javascript-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 
     <!--Drop Down Menu-->
     <script>function menuTransform(x) {
-    x.classList.toggle("click");
-    }</script>
+            x.classList.toggle("click");
+        }</script>
 
     <!--When the user clicks on the button,
     toggle between hiding and showing the dropdown content -->
     <script>function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-    }</script>
+            document.getElementById("myDropdown").classList.toggle("show");
+        }</script>
 
-    <!--Close the dropdown menu if the user clicks outside of it--> 
-    <script>window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}</script>
+    <!--Close the dropdown menu if the user clicks outside of it-->
+    <script>window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }</script>
 
-    </body>
+</body>
+
 </html>
