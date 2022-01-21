@@ -2,87 +2,92 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
-    <link href="CSS/ClownAcademy.css" rel="stylesheet" />
-    <title>Clown Academy</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+  <link href="CSS/ClownAcademy.css" rel="stylesheet" />
+  <title>Clown Academy</title>
 </head>
 
 <body>
-    <main class="container">
-        <header class="row py-2">
-            <div id="logoDiv" class="col-3 px-0"><img src="images/clown_logo.png" alt="ClownAcademy Logo" class="imgLogo"></div>
+  <main class="container">
+    <header class="row py-2">
+      <div id="logoDiv" class="col-3 px-0"><img src="images/clown_logo.png" alt="ClownAcademy Logo" class="imgLogo">
+      </div>
 
-            <!--Drop Down Menu-->
-            <div class="dropdown col-8 pr-4 d-md-none d-flex justify-content-end align-self-center">
-                <div class="dropbtn" onclick="myFunction(); menuTransform(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Home</a>
-                    <a href="classes.html">Classes</a>
-                    <a href="videos.html">Videos</a>
-                    <a href="staff.html">Staff</a>
-                    <a href="about.html">About</a>
-                    <a href="form.html">1-800-909-CLOWN</a>
-                  </div>
-              </div>
-            </div>
-            <!--Visible menu for desktop-->
-            <div class="col-9 d-none d-md-block text-right align-self-center largerText">
-                Home &nbsp &nbsp
-                <a href="classes.html">Classes </a> &nbsp &nbsp 
-                <a href="videos.html">Videos </a> &nbsp &nbsp
-                <a href="staff.html">Staff </a> &nbsp &nbsp
-                <a href="about.html">About </a> &nbsp &nbsp
-                1-800-909-clown
-            </div>
-        </header>
+      <!--Drop Down Menu-->
+      <div class="dropdown col-8 pr-4 d-md-none d-flex justify-content-end align-self-center">
+        <div class="dropbtn" onclick="myFunction(); menuTransform(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">Home</a>
+            <a href="classes.html">Classes</a>
+            <a href="videos.html">Videos</a>
+            <a href="staff.html">Staff</a>
+            <a href="about.html">About</a>
+            <a href="form.html">1-800-909-CLOWN</a>
+          </div>
+        </div>
+      </div>
+      <!--Visible menu for desktop-->
+      <div class="col-9 d-none d-md-block text-right align-self-center largerText">
+        Home &nbsp &nbsp
+        <a href="classes.html">Classes </a> &nbsp &nbsp
+        <a href="videos.html">Videos </a> &nbsp &nbsp
+        <a href="staff.html">Staff </a> &nbsp &nbsp
+        <a href="about.html">About </a> &nbsp &nbsp
+        1-800-909-clown
+      </div>
+    </header>
 
-        <section>
-        
-        </section>
+    <section>
 
-        <section>
+    </section>
 
-        </section>
+    <section>
 
-    </main>
+    </section>
 
-    <!--Javascript-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </main>
 
-    <!--Drop Down Menu-->
-    <script>function menuTransform(x) {
-    x.classList.toggle("click");
+  <!--Javascript-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!--Drop Down Menu-->
+  <script>function menuTransform(x) {
+      x.classList.toggle("click");
     }</script>
 
-    <!--When the user clicks on the button,
+  <!--When the user clicks on the button,
     toggle between hiding and showing the dropdown content -->
-    <script>function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+  <script>function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
     }</script>
 
-    <!--Close the dropdown menu if the user clicks outside of it--> 
-    <script>window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+  <!--Close the dropdown menu if the user clicks outside of it-->
+  <script>window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
       }
-    }
-  }
-}</script>
+    }</script>
 
-    </body>
+</body>
+
 </html>
