@@ -32,8 +32,17 @@ h1, h2, h4{
 .imgLogo{
     width: 70%;
 }
-.rotate30{
-    transform: rotate(-30deg);
+.rotate-20{
+    transform: rotate(-20deg);
+}
+.rotate-40{
+    transform: rotate(-40deg);
+}
+.rotate20{
+    transform: rotate(20deg);
+}
+.rotate40{
+    transform: rotate(40deg);
 }
 video{
     height: 40vh;

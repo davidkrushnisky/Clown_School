@@ -29,8 +29,8 @@ h1, h2, h4{
 .imgLogo{
     width:70%;
 }
-.rotate30{
-    transform: rotate(-30deg);
+.rotate-20{
+    transform: rotate(-20deg);
 }
 .bar1, .bar2, .bar3 {
     width: 35px;
