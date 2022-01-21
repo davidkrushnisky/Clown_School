@@ -145,6 +145,18 @@ video{
       margin: auto;
       display: block;
   }
+
+  a:link {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+.bi-facebook, .bi-instagram, .bi-youtube, .bi-vimeo {
+    padding-left: .5em;
+	font-size: 1.5em;
+}
   
   @media (min-width: 768px) and (max-width:992px) {
     .largerText{
