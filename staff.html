@@ -7,148 +7,193 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
     <link href="CSS/ClownAcademy.css" rel="stylesheet" />
-    <title>ClownAcademy Staff</title>
+    <title>Clown Academy</title>
 </head>
 
 <body>
     <main class="container">
-        <header class="row px-0 py-3">
-            <div id="logoDiv" class="col-4 px-0"><img src="Images/clown_logo.png" alt="ClownAcademy Logo" class="imgLogo"></div>
-            <div class="col-5 px-0 col-sm-6 d-md-none"></div>
-            <div class="col-3 col-sm-1 px-0 d-md-none">
-                <div class="container" onclick="menuTransform(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
+        <header class="row py-2">
+            <div id="logoDiv" class="col-3 px-0"><img src="images/clown_logo.png" alt="ClownAcademy Logo" class="imgLogo"></div>
+
+            <!--Drop Down Menu-->
+            <div class="dropdown col-8 pr-4 d-md-none d-flex justify-content-end align-self-center">
+                <div class="dropbtn" onclick="myFunction(); menuTransform(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="classes.html">Classes</a>
+                    <a href="videos.html">Videos</a>
+                    <a href="#">Staff</a>
+                    <a href="about.html">About</a>
+                    <a href="form.html">1-800-909-CLOWN</a>
+                  </div>
+              </div>
             </div>
-            <script>function menuTransform(x) {
-                    x.classList.toggle("click");
-                }</script>
-            <div class="col-1 px-0 d-none d-md-block text-center"><a href="index.html">Home</a></div>
-            <div class="col-1 px-0 d-none d-md-block text-center"><a href="classes.html">Classes</a></div>
-            <div class="col-1 px-0 d-none d-md-block text-center"><a href="videos.html">Videos</a></div>
-            <div class="col-1 px-0 d-none d-md-block text-center"><span>Staff</span></div>
-            <div class="col-1 px-0 d-none d-md-block text-center"><a href="about.html">About</a></div>
-            <div class="col-3 px-0 d-none d-md-block text-center"><span>1-800-909-CLOWN</span></div>
+            <!--Visible menu for desktop-->
+            <div class="col-9 d-none d-md-block text-right align-self-center largerText">
+                <a href="index.html">Home </a> &nbsp &nbsp
+                <a href="classes.html">Classes </a> &nbsp &nbsp 
+                <a href="videos.html">Videos </a> &nbsp &nbsp
+                Staff &nbsp &nbsp
+                <a href="about.html">About </a> &nbsp &nbsp
+                1-800-909-clown
+            </div>
         </header>
-    
-    <section class="row px-2 py-3">
-        <h1 class="col-12 text-center">Meet our Staff!</h1>
-        <div class="col-12 divideBar">
-            <p>&nbsp</p>
-        </div>
-        <h2 class="col-12 text-center py-2">Administration</h2>
-        <div class="col-2"></div>
-        <div class="col-8 card">
-            <h4 class="container text-center"><strong>Peter VanHaussen</strong></h4>
-            <div class="cardContainer">
-                <h5 class="text-center"><b>Artistic Director and Founder</b></h5>
-            </div>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3 card">
-            <h4 class="container text-center"><strong>Henri Cocolata</strong></h4>
-            <div class="cardContainer">
-                <h5 class="text-center"><b>Co-Artistic Director</b></h5>
-            </div>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3 card">
-            <h4 class="container text-center"><strong>Simon McMallet</strong></h4>
-            <div class="cardContainer">
-                <h5 class="text-center"><b>Set Coordinator</b></h5>
-            </div>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3 card">
-            <h4 class="container text-center"><strong>Shawna Smith</strong></h4>
-            <div class="cardContainer">
-                <h5 class="text-center"><b>Administator</b></h5>
-            </div>
-        </div>
-        <div class="col-4 d-none d-sm-block d-md-none"></div>
-        <div class="col-6 col-sm-4 col-md-3 card">
-            <h4 class="container text-center"><strong>Julie Hanes</strong></h4>
-            <div class="cardContainer">
-                <h5 class="text-center"><b>Staff Coordinator</b></h5>
-            </div>
-        </div>
-    </section>
-    <div class="divideBar">
+
+        <section>
+        
+        </section>
+
+        <section>
+
+        </section>
+
+    </main>
+
+    <!--Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!--Drop Down Menu-->
+    <script>function menuTransform(x) {
+    x.classList.toggle("click");
+    }</script>
+
+    <!--When the user clicks on the button,
+    toggle between hiding and showing the dropdown content -->
+    <script>function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }</script>
+
+    <!--Close the dropdown menu if the user clicks outside of it--> 
+    <script>window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}</script>
+
+<section class="row px-2 py-3">
+    <h1 class="col-12 text-center">Meet our Staff!</h1>
+    <div class="col-12 divideBar">
         <p>&nbsp</p>
     </div>
-    <section class="row px-2 py-2">
-        <h2 class="col-12 text-center ">Teachers</h2>
-        <div class="col-6 col-sm-4 col-md-3 card">
-            <img src="Images/James.jpg" alt="James the Clown" class="portrait">
-            <div class="cardContainer">
-                <h4 class="text-center"><b>James</b></h4>
-                <p><strong>Specialties</strong>:<br>Music + Dance</p>
-            </div>
+    <h2 class="col-12 text-center py-2">Administration</h2>
+    <div class="col-2"></div>
+    <div class="col-8 card">
+        <h4 class="container text-center"><strong>Peter VanHaussen</strong></h4>
+        <div class="cardContainer">
+            <h5 class="text-center"><b>Artistic Director and Founder</b></h5>
         </div>
-        <div class="col-6 col-sm-4 col-md-3 card">
-            <img src="Images/Jay.jpg" alt="Jay the Clown" class="portrait">
-            <div class="cardContainer">
-                <h4 class="text-center"><b>Jay</b></h4>
-                <p><strong>Specialties</strong>:<br>Acrobatics + Dance</p>
-            </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 card">
+        <h4 class="container text-center"><strong>Henri Cocolata</strong></h4>
+        <div class="cardContainer">
+            <h5 class="text-center"><b>Co-Artistic Director</b></h5>
         </div>
-        <div class="col-6 col-sm-4 col-md-3 card">
-            <img src="Images/Jenn.jpg" alt="Jenn the Clown" class="portrait">
-            <div class="cardContainer">
-                <h4 class="text-center"><b>Jenn</b></h4>
-                <p><strong>Specialties</strong>:<br>Storytelling + Prop Gags</p>
-            </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 card">
+        <h4 class="container text-center"><strong>Simon McMallet</strong></h4>
+        <div class="cardContainer">
+            <h5 class="text-center"><b>Set Coordinator</b></h5>
         </div>
-        <div class="col-6 col-sm-4 col-md-3 card">
-            <img src="Images/Kimbo.jpg" alt="Kimbo the Clown" class="portrait">
-            <div class="cardContainer">
-                <h4 class="text-center"><b>Kimbo</b></h4>
-                <p><strong>Specialties</strong>:<br>Mime Shows + Balloon Animals</p>
-            </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 card">
+        <h4 class="container text-center"><strong>Shawna Smith</strong></h4>
+        <div class="cardContainer">
+            <h5 class="text-center"><b>Administator</b></h5>
         </div>
-        <div class="col-6 col-sm-4 col-md-3 card">
-            <img src="Images/Lana.jpg" alt="Lana the Clown" class="portrait">
-            <div class="cardContainer">
-                <h4 class="text-center"><b>Lana</b></h4>
-                <p><strong>Specialties</strong>:<br>Juggling + Sleight of Hand</p>
-            </div>
+    </div>
+    <div class="col-4 d-none d-sm-block d-md-none"></div>
+    <div class="col-6 col-sm-4 col-md-3 card">
+        <h4 class="container text-center"><strong>Julie Hanes</strong></h4>
+        <div class="cardContainer">
+            <h5 class="text-center"><b>Staff Coordinator</b></h5>
         </div>
-        <div class="col-6 col-sm-4 col-md-3 card">
-            <img src="Images/Laura.jpg" alt="Laura the Clown" class="portrait">
-            <div class="cardContainer">
-                <h4 class="text-center"><b>Laura</b></h4>
-                <p><strong>Specialties</strong>:<br>Prop Gags + Acrobatics</p>
-            </div>
+    </div>
+</section>
+<div class="divideBar">
+    <p>&nbsp</p>
+</div>
+<section class="row px-2 py-2">
+    <h2 class="col-12 text-center ">Teachers</h2>
+    <div class="col-6 col-sm-4 col-md-3 card">
+        <img src="Images/James.jpg" alt="James the Clown" class="portrait">
+        <div class="cardContainer">
+            <h4 class="text-center"><b>James</b></h4>
+            <p><strong>Specialties</strong>:<br>Music + Dance</p>
         </div>
-        <div class="col-6 col-sm-4 col-md-3 card">
-            <img src="Images/Leanne.jpg" alt="Leanne the Clown" class="portrait">
-            <div class="cardContainer">
-                <h4 class="text-center"><b>Leanne</b></h4>
-                <p><strong>Specialties</strong>:<br>Balloon Animals + Dance</p>
-            </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 card">
+        <img src="Images/Jay.jpg" alt="Jay the Clown" class="portrait">
+        <div class="cardContainer">
+            <h4 class="text-center"><b>Jay</b></h4>
+            <p><strong>Specialties</strong>:<br>Acrobatics + Dance</p>
         </div>
-        <div class="col-6 col-sm-4 col-md-3 card">
-            <img src="Images/Nick.jpg" alt="Nick the Clown" class="portrait">
-            <div class="cardContainer">
-                <h4 class="text-center"><b>Nick</b></h4>
-                <p><strong>Specialties</strong>:<br>Magic Tricks + Voice Throwing</p>
-            </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 card">
+        <img src="Images/Jenn.jpg" alt="Jenn the Clown" class="portrait">
+        <div class="cardContainer">
+            <h4 class="text-center"><b>Jenn</b></h4>
+            <p><strong>Specialties</strong>:<br>Storytelling + Prop Gags</p>
         </div>
-        <div class="col-3 col-md-4 d-sm-none d-md-block">
-            <p></p>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 card">
+        <img src="Images/Kimbo.jpg" alt="Kimbo the Clown" class="portrait">
+        <div class="cardContainer">
+            <h4 class="text-center"><b>Kimbo</b></h4>
+            <p><strong>Specialties</strong>:<br>Mime Shows + Balloon Animals</p>
         </div>
-        <div class="col-6 col-sm-4 col-md-4 card">
-            <img src="Images/Sherman.jpg" alt="Sherman the Clown" class="portrait">
-            <div class="cardContainer">
-                <h4 class="text-center"><b>Sherman</b></h4>
-                <p><strong>Specialties</strong>:<br>Prop Gags + Mime Shows</p>
-            </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 card">
+        <img src="Images/Lana.jpg" alt="Lana the Clown" class="portrait">
+        <div class="cardContainer">
+            <h4 class="text-center"><b>Lana</b></h4>
+            <p><strong>Specialties</strong>:<br>Juggling + Sleight of Hand</p>
         </div>
-    </section>
-</main>
-</body>
-
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 card">
+        <img src="Images/Laura.jpg" alt="Laura the Clown" class="portrait">
+        <div class="cardContainer">
+            <h4 class="text-center"><b>Laura</b></h4>
+            <p><strong>Specialties</strong>:<br>Prop Gags + Acrobatics</p>
+        </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 card">
+        <img src="Images/Leanne.jpg" alt="Leanne the Clown" class="portrait">
+        <div class="cardContainer">
+            <h4 class="text-center"><b>Leanne</b></h4>
+            <p><strong>Specialties</strong>:<br>Balloon Animals + Dance</p>
+        </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 card">
+        <img src="Images/Nick.jpg" alt="Nick the Clown" class="portrait">
+        <div class="cardContainer">
+            <h4 class="text-center"><b>Nick</b></h4>
+            <p><strong>Specialties</strong>:<br>Magic Tricks + Voice Throwing</p>
+        </div>
+    </div>
+    <div class="col-3 col-md-4 d-sm-none d-md-block">
+        <p></p>
+    </div>
+    <div class="col-6 col-sm-4 col-md-4 card">
+        <img src="Images/Sherman.jpg" alt="Sherman the Clown" class="portrait">
+        <div class="cardContainer">
+            <h4 class="text-center"><b>Sherman</b></h4>
+            <p><strong>Specialties</strong>:<br>Prop Gags + Mime Shows</p>
+        </div>
+    </div>
+</section>
+    </body>
 </html>
