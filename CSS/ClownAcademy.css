@@ -127,6 +127,11 @@ h1, h2, h4{
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
+
+  .kidclown img{
+      margin: auto;
+      display: block;
+  }
   
   @media (min-width: 768px) and (max-width:992px) {
     .largerText{
@@ -138,4 +143,5 @@ h1, h2, h4{
 	.smallerText{
 		font-size: 0.75em;
 	}
-}
+  }
+
