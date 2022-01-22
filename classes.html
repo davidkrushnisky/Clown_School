@@ -198,12 +198,13 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+
       <!-- Comment form below -->
       <div class="div-12 col-md-6 order-md-1 text-center align-self-center">
         <h2>Leave a Comment</h2>
       </div>
       <div class="col-12 col-md-6 order-md-3 pt-2">
-        <form action="#" method="POST">
+        <form action="http://jac.stephmoreau.ca/submitForm/" method="get">
           <div class="rating" id="star">
             <input id="star5" name="star" type="radio" value="5" class="radio-btn hide" />
             <label for="star5">☆</label>
@@ -220,17 +221,17 @@
           <div class="row">
             <!-- Name -->
             <label for="inputName" class="col-3 col-form-label text-end">Name</label>
-            <div class="col-9"><input type="text" class="form-control form-control-sm" id="inputName"></div>
+            <div class="col-9"><input type="text" name="name" class="form-control form-control-sm" id="inputName"></div>
           </div>
           <div class="row">
             <!-- Email -->
             <label for="inputEmail" class="col-3 col-form-label text-end">E-mail</label>
-            <div class="col-9"><input type="email" class="form-control form-control-sm" id="inputEmail"></div>
+            <div class="col-9"><input type="email" name="email" class="form-control form-control-sm" id="inputEmail"></div>
           </div>
           <div class="row">
             <!-- Comment -->
             <label for="inputComment" class="col-3 col-form-label text-end">Comment</label>
-            <div class="col-9"><textarea class="form-control form-control-sm" id="inputComment"></textarea></div>
+            <div class="col-9"><textarea name="comment" class="form-control form-control-sm" id="inputComment"></textarea></div>
           </div>
           <div class="row mt-2">
             <!-- submit button -->
@@ -248,16 +249,16 @@
         <h6>Quick Links</h6>
         <ul>
           <a href="#">
-            <li>Look, funny clown haha</li>
+            <li>The Society for the Advancement of Clowns in Canada</li>
           </a>
           <a href="#">
-            <li>How to make people laugh</li>
+            <li>How to Juggle like a True Clown</li>
           </a>
           <a href="#">
-            <li>Acting classes</li>
+            <li>The True Faith: Clowning and the Hope it Brings in Times of Need</li>
           </a>
           <a href="#">
-            <li>Crusty the Clown blog</li>
+            <li>The Killer Clown Who Will Make you Laugh blog</li>
           </a>
           <a href="#"></a>
         </ul>
@@ -281,6 +282,7 @@
         <a href="#"><i class="bi bi-instagram"></i></a>
         <a href="#"><i class="bi bi-youtube"></i></a>
         <a href="#"><i class="bi bi-vimeo"></i></a>
+        <br />
 
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
@@ -294,8 +296,7 @@
         </div>
       </div>
       <div class="col-12 text-center pt-3">
-        <p>Be ware of copyright claims. Those are serious and people in the States are crazy. They'll sue you for
-          anything and everything. Capitalist am I right?</p>
+        <p>©LaughAcademy</p>
       </div>
     </footer>
   </main>

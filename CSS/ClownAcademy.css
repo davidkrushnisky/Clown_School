@@ -50,9 +50,22 @@ video{
 }
 
 .btn-primary {
-    background-color: red;
-    color: black;
-    border-color: black;
+    background-color: #ff00C3;
+    color: #0d0d0d;
+    border-color: none;
+    border-radius: 20px;
+    position:relative;
+    margin:.2em;
+    -webkit-transition:transform .3s ease-out;
+    transition:transform .3s ease-out;
+}
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus{
+	background-color: #e202ae;
+	color: #0d0d0d;
+	border-color: none;
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+    z-index:10;
 }
 .btn-secondary {
     background-color: white;
@@ -153,7 +166,6 @@ video{
     display: block;
   }
   
-  /* Change color of dropdown links on hover */
   .dropdown-content a:hover {background-color: #ddd}
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
@@ -163,25 +175,22 @@ video{
       margin: auto;
       display: block;
   }
-
   a:link {
     text-decoration: none;
-}
-
-li {
+  }
+  li {
     list-style-type: none;
-}
-.bi-facebook, .bi-instagram, .bi-youtube, .bi-vimeo {
+  }
+  .bi-facebook, .bi-instagram, .bi-youtube, .bi-vimeo {
     padding-left: .5em;
 	font-size: 1.5em;
-}
+  }
   
   @media (min-width: 768px) and (max-width:992px) {
     .largerText{
         font-size: 1.2em
     }
   }
-
   @media (max-width: 370px) {
 	.smallerText{
 		font-size: 0.75em;
