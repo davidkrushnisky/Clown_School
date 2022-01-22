@@ -17,7 +17,7 @@ body{
 main{
     background-color: #00B6FB;
 }
-header, footer, banner {
+header, footer, .banner {
     background-color: #F7FF10;
 }
 .bkgyellow{
@@ -51,8 +51,7 @@ video{
 
 .btn-primary {
     background-color: #ff00C3;
-    color: #0d0d0d;
-    border-color: none;
+    color: #0d0d0d; 
     border-radius: 20px;
     position:relative;
     margin:.2em;
@@ -62,7 +61,6 @@ video{
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus{
 	background-color: #e202ae;
 	color: #0d0d0d;
-	border-color: none;
     -webkit-transform:scale(1.2);
     transform:scale(1.2);
     z-index:10;
@@ -96,7 +94,6 @@ video{
     transition: 0.3s;
     border: 8px solid #F7FF10;
     padding: 5px;
-    align-self: cent;
     border-radius: 20px
 }
 .card:hover{
@@ -113,13 +110,13 @@ video{
 .divideBar{
     background-color: #F7FF10;
     height: 2em;
-    margin-top: 5px;
+
     margin-bottom: 5px;
 }
 .divideBar2{
     background-color: #00B6FB;
     height: 2em;
-    margin-top: px;
+    margin-top: 5px;
     margin-bottom: 5px;
 }
 .smallerText{
